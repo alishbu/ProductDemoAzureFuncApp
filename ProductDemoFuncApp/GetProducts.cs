@@ -18,6 +18,7 @@ namespace ProductDemoFuncApp
         // couldn't run with the ref using Microsoft.WindowsAzure.Storage.Table, so replaced that with 
         // using Microsoft.Azure.Cosmos.Table;
         // used chrome extension Restman to test get func
+        //  uses Azure Storage Emulator
         [FunctionName("GetProducts")]
         public static async Task<IActionResult> Run(
         [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = null)] HttpRequest req,

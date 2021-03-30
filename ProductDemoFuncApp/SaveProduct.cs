@@ -23,6 +23,9 @@ namespace ProductDemoFuncApp
          * use nuget package:: dotnet add ProductDemoFuncApp package Microsoft.Azure.WebJobs.Extensions.Storage
          * used chrome extension Restman to test post func
          *  https://visualstudiomagazine.com/articles/2018/02/21/testing-precompiled-azure-functions.aspx
+         *  
+         *  uses Azure Storage Emulator
+         *  https://docs.microsoft.com/en-us/azure/storage/common/storage-use-emulator
          */
         [FunctionName("SaveProduct")]
         public static async Task<IActionResult> Run(
