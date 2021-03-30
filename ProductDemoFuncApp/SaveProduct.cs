@@ -30,7 +30,7 @@ namespace ProductDemoFuncApp
             [Table("Product")] ICollector<ProductEntity> outTable,
             ILogger log)
         {
-            log.LogInformation("C# HTTP trigger ReceiveProduct processed a request.");
+            log.LogInformation("C# HTTP trigger SaveProduct processed a request.");
 
             string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
             dynamic productData = JsonConvert.DeserializeObject<Product>(requestBody);
